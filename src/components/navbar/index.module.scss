@@ -1,0 +1,59 @@
+.container{
+    height: 5rem;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    transition: .5s;
+    padding: 0 1rem;
+
+    position: fixed;
+    z-index: 1;
+    
+    .logo{
+        max-height: 100%; // Garante que a logo não ultrapasse a altura da navbar
+        max-width: 100%; // Garante que a logo não ultrapasse a largura do contêiner
+        height: auto; // Mantém a proporção da imagem
+        width: auto; // Mantém a proporção da imagem
+
+    }
+
+    .linksNavbar{
+        display: flex;
+        gap: .8rem;
+
+        .btnNavbar{
+            .btnNavbarText{
+                color: white;
+            }
+        }
+    }
+
+    .iconsNavbar{
+        display: flex;
+        margin-right: 2rem;
+
+        .navIcon{
+            color: white;
+        }
+    }
+
+    &:hover{
+        background-color: white;
+
+        .linksNavbar{
+            .btnNavbar{
+                .btnNavbarText{
+                    color: black;
+                }
+            }
+        }
+
+        .iconsNavbar{
+            .navIcon{
+                color: black;
+            }
+        }
+    }
+}
