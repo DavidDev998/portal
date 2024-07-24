@@ -2,13 +2,15 @@ import SearchIcon from "@mui/icons-material/Search";
 import { Button } from "@mui/material";
 import ContactCard from "../../components/contactCard";
 import Navbar from "../../components/navbar";
+import NavbarMobile from "../../components/navbarMobile";
 import Product from "../../components/product";
 import styles from "./home.module.scss";
 
 export default function Home() {
+	console.log(window.innerWidth);
 	return (
 		<div className={styles.container}>
-			<Navbar />
+			{window.innerWidth > 1080 ? <Navbar /> : <NavbarMobile />}
 			<div className={styles.bannerContainer}>
 				<video
 					id="background-video"
@@ -53,10 +55,6 @@ export default function Home() {
 				<Product />
 				<Product />
 			</div>
-			{/* <div className={styles.peopleContainer}>
-				<PersonCard />
-				<PersonCard />
-			</div> */}
 			<div className={styles.contactContainer}>
 				<h2>Contatos</h2>
 				<ContactCard />

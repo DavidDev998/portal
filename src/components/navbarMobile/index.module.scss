@@ -1,0 +1,58 @@
+.container{
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    transition: .5s;
+    padding: 0 1rem;
+
+    position: fixed;
+    z-index: 1;
+    
+    .logo{
+        max-height: 100%; 
+        max-width: 100%; 
+        height: auto; 
+        width: auto; 
+
+    }
+
+    .hamburguer{
+        margin-right: 2rem;
+    }
+
+    .hiddenNavbar{
+        position: absolute;
+        background-color: white;
+        top: 5rem;
+        left: 0;
+        width: 100vw;
+        display: flex;
+    }
+
+    .linksNavbar{
+        display: flex;
+        max-width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        padding: 1rem;
+        .btnNavbar{
+            .btnNavbarText{
+                color: black;
+            }
+        }
+    }
+
+    .iconsNavbar{
+       
+
+        .navIcon{
+            color: black;
+        }
+    }
+
+    
+}
